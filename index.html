@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MiG 29</title>
+	<meta charset="utf-8">
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<link href="splitting.css" type="text/css" rel="stylesheet">
+	<link href="swiper.min.css" rel="stylesheet">
+</head>
+<body>
+	<header id="header">
+		<ul>
+	        <li><a href="#cover"><span title="Home">Home</span></a></li>
+	        <li><a href="#info"><span title="Info">Info</span></a></li>
+	        <li><a href="#slider"><span title="Photos">Photos</span></a></li>
+	        <li><a href="#video"><span title="Video">Video</span></a></li>
+	        <li><a href="#spec"><span title="More">More</span></a></li>
+    	</ul>
+	</header>
+	<div class="cover" id="cover"><h1>MiG-29</h1></div>
+	<div class="info" id="info"onmouseenter="start_text()">
+		<div class="type" data-splitting>
+			The Mikoyan MiG-29 (Russian: Микоян МиГ-29; NATO reporting name: Fulcrum) is a twin-engine jet fighter aircraft designed in the Soviet Union. Developed by the Mikoyan design bureau as an air superiority fighter during the 1970s, the MiG-29, along with the larger Sukhoi Su-27, was developed to counter new U.S. fighters such as the McDonnell Douglas F-15 Eagle and the General Dynamics F-16 Fighting Falcon.The MiG-29 entered service with the Soviet Air Forces in 1982.<br><br>
+
+			While originally oriented towards combat against any enemy aircraft, many MiG-29s have been furnished as multirole fighters capable of performing a number of different operations, and are commonly outfitted to use a range of air-to-surface armaments and precision munitions. The MiG-29 has been manufactured in several major variants, including the multirole Mikoyan MiG-29M and the navalised Mikoyan MiG-29K; the most advanced member of the family to date is the Mikoyan MiG-35. Later models frequently feature improved engines, glass cockpits with HOTAS-compatible flight controls, modern radar and IRST sensors, and controlsiderably increased fuel capacity; some aircraft have also been equipped for aerial refuelling.<br><br>
+
+			Following the dissolution of the Soviet Union, the militaries of a number of former Soviet republics have continued to operate the MiG-29, the largest of which is the Russian Air Force. The Russian Air Force wanted to upgrade its existing fleet to the modernised MiG-29SMT configuration, but financial difficulties have limited deliveries. The MiG-29 has also been a popular export aircraft; more than 30 nations either operate or have operated the aircraft to date, India being one of the largest export operators of the type. In 2013 the MiG-29 was still in production by Mikoyan, a subsidiary of United Aircraft Corporation (UAC) since 2006
+		</div>
+		<script src="js/splitting.js"></script>
+		<script>
+			function start_text(){
+				Splitting();
+				document.getElementsByClassName('type')[0].style.transition = "all linear 3s";
+				document.getElementsByClassName('type')[0].style.opacity = "1";
+			}
+		</script>
+	</div>
+	<div class="slider" id="slider">
+		<div class="swiper-container">
+    		<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="slider/first.jpg"></div>
+				<div class="swiper-slide"><img src="slider/second.jpg"></div>
+				<div class="swiper-slide"><img src="slider/third.jpg"></div>
+				<div class="swiper-slide"><img src="slider/fourth.jpg"></div>
+				<div class="swiper-slide"><img src="slider/before.jpg"></div>
+				<div class="swiper-slide"><img src="slider/fiveth.jpg"></div>
+				<div class="swiper-slide"><img src="slider/sixth.jpg"></div>
+    		</div>
+    	<!-- Add Pagination -->
+    	<div class="swiper-pagination"></div>
+	    <!-- Add Arrows -->
+	    <div class="swiper-button-next"></div>
+	    <div class="swiper-button-prev"></div>
+  	</div>
+
+  		<!-- Swiper JS -->
+  		<script src="js/swiper.min.js"></script>
+
+  		<!-- Initialize Swiper -->
+		<script>
+		var swiper = new Swiper('.swiper-container', {
+		  spaceBetween: 20,
+		  centeredSlides: true,
+		  autoplay: {
+		    delay: 3500,
+		    disableOnInteraction: false,
+		  },
+		  pagination: {
+		    el: '.swiper-pagination',
+		    clickable: true,
+		  },
+		  navigation: {
+		    nextEl: '.swiper-button-next',
+		    prevEl: '.swiper-button-prev',
+		  },
+		});
+		</script>
+	</div>
+	<div class="video" id="video">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/0_Cgxy7N-V0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div class="spec" id="spec">
+		<section class="info">
+			<h3>General characteristics</h3>
+			<ul>
+				<li>Crew: 1</li>
+				<li>Length: 17.32m (56 ft 10 in)</li>
+				<li>Wingspan: 11.36m (37 ft 3 in)</li>
+				<li>Height: 4.73m (15 ft 6 in)</li>
+				<li>Wing area: 38m<sup>2</sup>(409 ft<sup>2</sup>)</li>
+				<li>Empty weight:14,900kg (33,730 Ib)</li>
+				<li>Max. takeoff weight: 18,000kg (44,100 Ib)</li>
+				<li>Fuel capacity: 3,500kg (7,716 Ib) internal</li>
+				<li>Powerplant: 2x Klimov RD-33 afterburning turbofans, 81.59 kN (18,342 Ibf) each</li>
+			</ul>
+			<h3>Performance</h3>
+			<ul>
+				<li>Maximum speed: 
+					<ul><li>At high altitude:Mach 2.25 (2,400km/h; 1,490mph)</li>
+						<li>At low altitude:Mach 1.21 (1,500 km/h; 930mph)</li></ul>
+				</li>
+				<li>Range:1,430 km (888 mi; 772 nmi) with maximum internal fuel</li>
+				<li>Ferry range: 2,100 km (1,300 mi; 1,130 nmi) with 1 drop tank</li>
+				<li>Service ceiling:18,000 m (59,100 ft)</li>
+				<li>Rate of climb: 330m/s (65,000 ft/min) (initial); 109 m/s (21,500 ft/min) (average) (0-6,000m)</li>
+				<li>Wing loading:403kg/m<sup>2</sup> (82 Ib/ft<sup>2</sup>)</li>
+				<li>Thrust/weight: 1.09</li>
+				<li>Maximum g-load: 9g</li>
+			</ul>
+		</section>
+	</div>
+</body>
+</html>
